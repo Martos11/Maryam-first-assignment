@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling the index page */
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* background-color: #e772b8; */
+  background-color: rgb(176, 176, 223);
+}
+
+nav a {
+  float: none;
+  font-size: 20px;
+  margin: 15px;
+  text-decoration: none;
+  text-align: center;
+  color: #741b50;
+}
+
+.dropdown {
+  float: right;
+  margin-right: 50px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 110px; */
+  width: 105px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* styling the index page done */
+
+/* styling my banner section */
+.banner {
+  text-align: center;
+  font-size: 40px;
+  height: 400px;
+  padding-block: 100px;
+  background-color: rgb(207, 248, 234);
+}
+/* styling my banner section done */
+/* my content section */
+
+.content h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-block: 15px;
+}
+.content p,
+ul {
+  font-size: 20px;
+}
+.content p {
+  text-align: center;
+  margin-block: 10px;
+}
+.content ul {
+  margin-inline-start: 60px;
+}
+.back-to-top {
+  margin-block: 20px;
+  font-size: 20px;
+}
+.back-to-top a {
+  text-decoration: none;
+  margin-inline-start: 41px;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  background-color: #130d10;
+  color: white;
+  padding-block: 20px;
+}
+
+/* my content section done */
+
+.alt-test {
+  float: right;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.alt-image img {
+  width: 70%;
+}
+.alt-image {
+  text-align: center;
+  background-color: #f7f3f3;
+}
+.alt-image p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 55px;
+  text-align: center;
+}
+
+.alt-form h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  margin: 8px;
+}
+#altform-p {
+  font-size: large;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 8px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /*Space between the two inputs*/
+  margin: 15px;
+}
+.input input,
+select {
+  padding: 16px;
+  font-size: 1rem;
+  border: 1px solid #383636;
+  /* border: none; */
+  border-radius: 4px;
+  width: 216px;
+  background-color: #faf9f9;
+}
+.last-test p {
+  float: right;
+  font-size: large;
+  width: 46%;
+}
+/* label {
+  margin-bottom: 400px;
+} */
+
+/* Styling the table page */
+.table-page {
+  background-color: #faf7f9;
+}
+table {
+  table-layout: fixed; /* Fixes the layout, so columns have equal width */
+  width: 60%;
+  margin: 0 auto;
+  /* background-color: rgb(252, 226, 160); */
+}
+
+th {
+  font-weight: bold;
+  text-align: left; /* Center-aligns header text */
+}
+
+td {
+  text-align: left; /* Right-aligns body text */
+}
+
+th,
+td {
+  word-wrap: break-word; /* Ensures text wraps within cells */
+  padding: 20px;
+  border: 1px solid #ddd; /* Adds a light border to each cell */
+  text-align: left; /* Aligns text to the left */
+}
+caption {
+  caption-side: top; /* Position the caption at the top (default) */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #741b50;
+  /* caption-side: bottom; This will position the caption to the bottom by default*/
+  border-style: initial;
+  padding: 10px;
+}
+thead {
+  background-color: #741b50; /* Light gray background for the header */
+}
+tbody tr:nth-child(odd) {
+  background-color: #ebc3e2; /* White background for even rows */
+}
+tbody tr:nth-child(even) {
+  background-color: #e9e0e0; /* White background for even rows */
+}
+tbody tr:hover {
+  /* background-color: #f1f1f1; */
+  /* Change background color on row hover */
+  cursor: pointer; /* Change cursor to pointer */
+  cursor: all-scroll;
+}
+
+/* styling the media page */
+/* .picture-element {
+  text-align: center;
+  margin: 0 auto;
+} */
+.picture-element {
+  display: flex;
+  gap: 15px;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-self: self-end;
+  /* margin-inline-start: 30px; */
+}
+.image {
+  flex: 1fr 1fr 1fr;
+  border: 4px solid purple;
+  /* height: 500px;
+  width: 350px; */
+  padding: 50px;
+  /* margin-block-start: 40px; */
+  /* text-align: center; */
+}
+.image p {
+  text-align: center;
+}
+.image button {
+  text-align: center;
+  width: 90px;
+  height: 40px;
+}
+.picture-element img {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  align-self: self-end;
+  /* margin-inline-start: 45px;
+  margin-block-start: 30px; */
+
+  /* margin-block-end: 25px; */
+}
+.picture-element h1 {
+  margin-block: 25px;
+}
+/* .audio-element h1 {
+  text-align: center;
+  font-size: 20px;
+}
+.video-element video {
+  text-align: center;
+  margin: 0 auto;
+} */
+/* styling the media page done */
+
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    background-color: rgb(252, 229, 171);
+    table-layout: fixed;
+  }
+}
+@media (max-width: 500px) {
+  table {
+    width: 100%;
+    background-color: rgb(252, 229, 171);
+    table-layout: fixed;
+  }
+}
+/* @media (max-width: 360px) {
+  table {
+    width: 100%;
+    background-color: rgb(252, 229, 171);
+    table-layout: fixed;
+  }
+} */
