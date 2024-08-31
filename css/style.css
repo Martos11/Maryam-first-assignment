@@ -245,7 +245,7 @@ tbody tr:hover {
   /* height: 500px;
   width: 350px; */
   padding: 50px;
-  /* margin-block-start: 40px; */
+  margin-block-start: 40px;
   /* text-align: center; */
 }
 .image p {
@@ -255,6 +255,7 @@ tbody tr:hover {
   text-align: center;
   width: 90px;
   height: 40px;
+  margin-inline-start: 80px;
 }
 .picture-element img {
   width: 250px;
@@ -295,10 +296,29 @@ tbody tr:hover {
     table-layout: fixed;
   }
 }
-/* @media (max-width: 360px) {
-  table {
-    width: 100%;
-    background-color: rgb(252, 229, 171);
-    table-layout: fixed;
+@media (max-width: 1103px) {
+  .picture-element {
+    display: flex;
+    gap: 15px;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: self-end;
+    /* margin-inline-start: 30px; */
   }
-} */
+  .image {
+    flex: 1fr 1fr 1fr;
+    border: 4px solid red;
+    padding: 50px;
+    margin-block-start: 40px;
+  }
+  .picture-element img {
+    width: 220px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    align-self: self-end;
+  }
+}
